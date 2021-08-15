@@ -1,0 +1,6 @@
+.modalHeader {
+  display: flex;
+}
+.modalHeader i {
+  font-size: 30px;
+}

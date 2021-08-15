@@ -1,0 +1,32 @@
+.mainWrapper {
+  display: flex;
+  max-width: 1200px;
+  width: 1200px;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+.mainWrapper ul {
+  list-style: none;
+  padding: 0;
+}
+.logoWrapper {
+  display: flex;
+  height: 30px;
+  width: 205px;
+}
+
+.textContent {
+  display: flex;
+}
+.finalFooter {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #3890b4;
+  padding: 2rem 0;
+}
+.finalFooter p {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}

@@ -1,9 +1,20 @@
+@font-face {
+  font-family: 'Ebrima';
+  src: url('/fonts/Ebrima.eot');
+  src: local('Ebrima'), local('Ebrima'),
+    url('/fonts/Ebrima.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Ebrima.woff2') format('woff2'),
+    url('/fonts/Ebrima.woff') format('woff'),
+    url('/fonts/Ebrima.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Ebrima';
 }
 
 a {

@@ -1,0 +1,15 @@
+.backgroundDiv {
+  width: 100%;
+  background-color: aliceblue;
+  margin: 6rem 0;
+}
+.mainWrapper {
+  width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.individualPics:nth-child(even) {
+  margin-top: 30px;
+}
