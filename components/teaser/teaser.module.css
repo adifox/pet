@@ -2,9 +2,14 @@
   color: #fff;
   width: 100vw;
 }
+.heroWrapper svg {
+  width: 100%;
+}
 .heroContainer {
   background: linear-gradient(180deg, #3890b4 0%, #095b90 65%);
   width: 100%;
+  /* border-bottom-left-radius: 25%; */
+  /* border-bottom-right-radius: 25%; */
 }
 .heroContent {
   display: flex;
@@ -13,7 +18,7 @@
   max-width: 1200px;
   justify-content: space-between;
   width: 100%;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 /* .heroImageContainer, */
 .heroTitles {

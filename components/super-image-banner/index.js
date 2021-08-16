@@ -14,7 +14,7 @@ const SuperImageBanner = ({ blok }) => {
             <ImageWrapper
               src={pic.filename}
               alt='petexcellenttreatment'
-              height={250}
+              height={200}
               width={250}
               priority={true}
             />

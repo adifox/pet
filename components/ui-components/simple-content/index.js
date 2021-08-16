@@ -12,8 +12,8 @@ const SimpleContent = ({ blok }) => {
       <div className={styles.imageWrapper}>
         <ImageWrapper
           src={image.filename}
-          width={400}
-          height={300}
+          width={600}
+          height={350}
           alt={'an image'}
         />
       </div>
@@ -31,8 +31,8 @@ const SimpleContent = ({ blok }) => {
       <div className={styles.imageWrapper}>
         <ImageWrapper
           src={image.filename}
-          width={400}
-          height={300}
+          width={600}
+          height={350}
           alt={'an image'}
         />
       </div>

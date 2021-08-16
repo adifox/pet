@@ -1,7 +1,7 @@
 .mainWrapper {
   display: flex;
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
   justify-content: space-between;
   margin-top: 2rem;
 }
@@ -11,8 +11,12 @@
 }
 
 .imageWrapper {
-  width: 400px;
+  width: 600px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%), 0 5px 26px 0 rgb(67 94 131 / 15%);
+  padding: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 .textWrapper {
-  width: 300px;
+  width: 500px;
 }
