@@ -9,7 +9,7 @@ async function main({ email, message, name }) {
   let transporter = nodemailer.createTransport({
     host: process.env.HOST,
     port: process.env.PORT,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.USER_EMAIL,
       pass: process.env.USER_EMAIL_PASSWORD,
