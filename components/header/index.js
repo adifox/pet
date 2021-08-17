@@ -20,7 +20,7 @@ const Header = () => {
           <Link href='/'>
             <a>
               <Logo
-                src={'/images/logo.png'}
+                src={'/images/logo-min.jpg'}
                 alt='petexcellenttreatment logo'
                 width={205}
                 height={30}

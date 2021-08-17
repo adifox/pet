@@ -8,6 +8,7 @@ import Teaser from '../components/teaser'
 import SimpleContent from '../components/ui-components/simple-content'
 import HeroTitle from '../components/ui-components/hero-title'
 import SuperImageBanner from '../components/super-image-banner'
+import ContactForm from '../components/contact-form'
 
 import styles from '../styles/Home.module.css'
 
@@ -53,7 +54,7 @@ export default function Home({ storyblokData }) {
             </div>
           ))}
         </div>
-        {superImageBanner}
+        <ContactForm />
         {/* <div className={styles.grid}>
           <a href='https://nextjs.org/docs' className={styles.card}>
             <h2>Documentation &rarr;</h2>
