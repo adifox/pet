@@ -1,39 +1,20 @@
 .headerWrapper {
   display: flex;
-  /* align-items: center; */
   position: fixed;
   z-index: 12;
   height: 6rem;
   top: 0;
-  /* padding: 0 2rem; */
-  /* color: #293241; */
-  /* color: #3d5a80; */
-  /* color: #1d2278; */
   color: #fff;
-  /* background-color: #fff; */
-  /* background: linear-gradient(
-    90deg,
-    rgba(23, 79, 119, 1) 0%,
-    rgba(61, 106, 141, 1) 65%
-  ); */
   background-color: #3890b4;
   width: 100vw;
-  /* border-width: 0px 0px 1px;
-  border-style: solid;
-  border-bottom-color: #eaeaea; */
 }
 .headerContainer {
-  /* width: 90vw; */
   width: 100%;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  /* padding: 0 4rem; */
 }
-/* :is(.logoWrapper, .logoWrapper a) {
-  display: flex;
-} */
 .logoWrapper {
   display: flex;
   padding: 4px 0;
@@ -44,7 +25,7 @@
 .navSection {
   display: flex;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 30px;
 }
 .ulStyle {
@@ -64,10 +45,12 @@
   border-bottom: 1px solid #fff;
 }
 .contactElement {
-  background-color: #fff;
-  padding: 2px 6px;
   color: #293241;
-  border-radius: 4px;
+}
+.contactElement a {
+  background-color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.08));
 }
 .articles {

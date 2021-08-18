@@ -5,7 +5,8 @@ import styles from './teaser.module.css'
 import ImageWrapper from '../ui-components/image-wrapper'
 
 const Hero = ({ blok }) => {
-  const { headline, subtitle, teaserImage } = blok
+  const { headline, subtitle, teaserImage, teaserSubImage } = blok
+  console.log
   return (
     <div className={styles.heroWrapper}>
       <div className={styles.heroContainer}>
@@ -18,11 +19,22 @@ const Hero = ({ blok }) => {
             <ImageWrapper
               src={teaserImage.filename}
               alt='petexcellenttreatment'
-              height={200}
-              width={450}
+              height={300}
+              width={400}
               priority={true}
             />
+            <div className={styles.blinkTeaserElement}>
+              <ImageWrapper
+                src={teaserSubImage.filename}
+                alt='petexcellenttreatment'
+                height={100}
+                width={400}
+                priority={true}
+              />
+            </div>
           </div>
+          {/* <div className={styles.heroImageContainer}>
+          </div> */}
         </div>
       </div>
       <svg
@@ -31,7 +43,7 @@ const Hero = ({ blok }) => {
         viewBox='0 0 500 80'
         preserveAspectRatio='none'
       >
-        <path d='M0,0 L0,40 Q250,80 500,40 L500,0 Z' fill='#095b90' />
+        <path d='M0,0 L0,40 Q250,80 500,40 L500,0 Z' fill='#3890b4' />
       </svg>
     </div>
   )
