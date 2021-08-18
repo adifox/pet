@@ -34,7 +34,16 @@ async function main({ email, message, name }) {
 }
 
 export default function handler(req, res) {
-  let error = null
-  main(req.body).catch((err) => (err = error))
-  res.status(200).json({ name: 'John Doe', error })
+  let error = {
+    hola: 'test, test',
+  }
+  let response = null
+  main(req.body)
+    .then((res) => {
+      response = res
+    })
+    .catch((err) => {
+      error.server = err
+    })
+  res.status(200).json({ name: 'John Doe', next: { ...error, ...response } })
 }
