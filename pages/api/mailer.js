@@ -7,7 +7,7 @@ async function main({ email, message, name }) {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: 'smtp.ionos.es',
+    host: process.env.HOST,
     port: 587,
     secure: false,
     auth: {
