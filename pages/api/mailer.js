@@ -11,15 +11,15 @@ async function main({ email, message, name }) {
     port: 587,
     secure: false,
     auth: {
-      user: 'info@petexcellenttreatment.com',
+      user: process.env.USER_EMAIL,
       pass: process.env.USER_EMAIL_PASSWORD,
     },
   })
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: 'info@petexcellenttreatment.com', // sender address
-    to: `'info@petexcellenttreatment.com', ${email}`, // list of receivers
+    from: process.env.USER_EMAIL, // sender address
+    to: `info@petexcellenttreatment.com, ${email}`, // list of receivers
     subject: name, // Subject line
     text: message, // plain text body
     // html: '<b>Hello world?</b>', // html body
