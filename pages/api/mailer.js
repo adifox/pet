@@ -7,47 +7,29 @@ async function main({ email, message, name }) {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: process.env.HOST,
-    port: process.env.PORT,
+    host: 'smtp.ionos.es',
+    port: 587,
     secure: false,
     auth: {
-      user: process.env.USER_EMAIL,
+      user: 'info@petexcellenttreatment.com',
       pass: process.env.USER_EMAIL_PASSWORD,
     },
   })
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: process.env.USER_EMAIL, // sender address
-    to: `${process.env.USER_EMAIL}, ${email}`, // list of receivers
+    from: 'info@petexcellenttreatment.com', // sender address
+    to: `'info@petexcellenttreatment.com', ${email}`, // list of receivers
     subject: name, // Subject line
     text: message, // plain text body
     // html: '<b>Hello world?</b>', // html body
   })
 
-  console.log('Message sent: %s', info.messageId)
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-  // Preview only available when sending through an Ethereal account
-  console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info))
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-
   return info
 }
 
-export default function handler(req, res) {
-  let error = {
-    hola: 'test, test',
-  }
-  let response = null
-  main(req.body)
-    .then((res) => {
-      response = res
-    })
-    .catch((err) => {
-      error.server = err
-    })
-  res
-    .status(200)
-    .json({ name: 'John Doe', next: { ...error }, nextRes: response })
+export default async function handler(req, res) {
+  const mailServerResponse = await main(req.body)
+
+  res.status(200).json({ mailerResponse: mailServerResponse })
 }
