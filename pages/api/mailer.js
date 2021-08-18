@@ -47,5 +47,7 @@ export default function handler(req, res) {
     .catch((err) => {
       error.server = err
     })
-  res.status(200).json({ name: 'John Doe', next: { ...error, ...response } })
+  res
+    .status(200)
+    .json({ name: 'John Doe', next: { ...error }, nextRes: response })
 }
