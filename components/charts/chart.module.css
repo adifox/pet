@@ -1,0 +1,21 @@
+.chartContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 2rem 0;
+}
+.chartTextWrapper {
+  width: 500px;
+  padding-top: 2rem;
+}
+.chartTextWrapper p {
+  color: #6e6d7a;
+}
+.chartDataWrapper {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.donutWrapper {
+  width: 400px;
+}

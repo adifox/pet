@@ -1,0 +1,49 @@
+{
+  "year": ["3-6 veces al año", "1-2 veces al año", "Más de 6 veces al año"],
+  "yearsData": [36, 45, 20, 100],
+  "countries": [
+    "Rumanía",
+    "Polonia",
+    "Portugal",
+    "Hungría",
+    "Irlanda",
+    "Eslovaquia",
+    "Russia",
+    "España",
+    "Bélgica",
+    "Italia",
+    "Finlandia",
+    "Reino Unido",
+    "Dinamarca"
+  ],
+  "countriesData": [
+    "46",
+    "39",
+    "38",
+    "35",
+    "35",
+    "28",
+    "27",
+    "26",
+    "24",
+    "24",
+    "24",
+    "23",
+    "23"
+  ],
+  "time": [
+    "Jugar",
+    "Pasear",
+    "Viajar al campo o playa",
+    "Hacer deporte",
+    "Asistir a eventos sociales"
+  ],
+  "timeData": [87, 78, 61, 20, 17],
+  "timeColors": [
+    "rgb(228, 49, 126)",
+    "rgb(125, 70, 152)",
+    "rgb(99, 192, 171)",
+    "rgb(144, 195, 31)",
+    "rgb(250, 191, 28)"
+  ]
+}

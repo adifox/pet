@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -9,11 +10,13 @@ import SimpleContent from '../components/ui-components/simple-content'
 import HeroTitle from '../components/ui-components/hero-title'
 import SuperImageBanner from '../components/super-image-banner'
 import ContactForm from '../components/contact-form'
+import Chart from '../components/charts'
 
 import styles from '../styles/Home.module.css'
 
 export default function Home({ storyblokData }) {
   const simpleContentArray = []
+  const chartDisplayArray = []
 
   let teaserContent = null
   let heroTitle = null
@@ -31,7 +34,79 @@ export default function Home({ storyblokData }) {
     if (blok.component === 'superImageBanner') {
       superImageBanner = <SuperImageBanner blok={blok} />
     }
+    if (blok.component === 'chartDisplay') {
+      chartDisplayArray.push(blok)
+    }
   })
+
+  // const config = {
+  //   type: 'bar',
+  //   data: data,
+  //   options: {
+  //     indexAxis: 'y',
+  //     // Elements options apply to all of the options unless overridden in a dataset
+  //     // In this case, we are setting the border of each horizontal bar to be 2px wide
+  //     elements: {
+  //       bar: {
+  //         borderWidth: 2,
+  //       },
+  //     },
+  //     responsive: true,
+  //     plugins: {
+  //       legend: {
+  //         position: 'right',
+  //       },
+  //       title: {
+  //         display: true,
+  //         text: 'Chart.js Horizontal Bar Chart',
+  //       },
+  //     },
+  //   },
+  // }
+
+  const labels1 = [
+    '1-2 veces al año',
+    '3-6 veces al año',
+    'Más de 6 veces al año',
+  ]
+  const data1 = {
+    labels: labels1,
+    datasets: [
+      {
+        label: 'Porcentaje de encuestrados',
+        backgroundColor: '#095b90',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [35, 45, 20, 100],
+      },
+    ],
+  }
+
+  const options1 = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Frecuencia con la que los dueños de perros viajan con ellos en España según una encuesta publicada en julio de 2019',
+      },
+    },
+  }
+
+  const options2 = {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Frecuencia con la que los dueños de perros viajan con ellos en España según una encuesta publicada en julio de 2019',
+      },
+    },
+  }
 
   return (
     <div className={styles.container}>
@@ -54,36 +129,14 @@ export default function Home({ storyblokData }) {
             </div>
           ))}
         </div>
+        <div className={styles.chartWrapper}>
+          {chartDisplayArray.map((el) => (
+            <div key={el._uid}>
+              <Chart blok={el} />
+            </div>
+          ))}
+        </div>
         <ContactForm />
-        {/* <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href='https://github.com/vercel/next.js/tree/master/examples'
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
       </main>
     </div>
   )

@@ -19,6 +19,11 @@
 .simpleContentWrapper {
   /* margin-top: 1rem; */
 }
+.chartWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
 
 .footer {
   width: 100%;
