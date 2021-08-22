@@ -1,7 +1,8 @@
 .mainWrapper {
   display: flex;
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   justify-content: space-between;
   margin-top: 2rem;
 }
@@ -11,13 +12,35 @@
 }
 
 .imageWrapper {
-  width: 600px;
+  width: 100%;
+  max-width: 60rem;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%), 0 5px 26px 0 rgb(67 94 131 / 15%);
   padding: 10px;
   box-sizing: border-box;
 }
 .textWrapper {
   box-sizing: border-box;
-  width: 500px;
-  padding-top: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  padding: 2rem;
+}
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .imageWrapper {
+    padding: 0.5rem;
+  }
+  .textWrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .mainWrapper {
+    flex-wrap: wrap;
+  }
+  .textWrapper {
+    padding: 0;
+  }
 }

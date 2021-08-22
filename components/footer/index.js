@@ -6,15 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles.outerBox}>
-        <div className={styles.mainWrapper}>
-          {/* <div className={styles.logoWrapper}>
-          <Logo
-            src={'/images/logo.png'}
-            alt='petexcellenttreatment logo'
-            width={205}
-            height={30}
-          />
-        </div> */}
+        {/* <div className={styles.mainWrapper}>
           <div>
             <h2>Contacto</h2>
             <ul>
@@ -40,7 +32,7 @@ const Footer = () => {
               <li>Contáctanos</li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className={styles.finalFooter}>
         <p>&copy; Pet Excellent Treatment</p>

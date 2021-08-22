@@ -1,10 +1,11 @@
 .outerBox {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%), 0 5px 26px 0 rgb(67 94 131 / 15%);
+  padding: 0 4rem;
 }
 .mainWrapper {
   display: flex;
+  width: 100%;
   max-width: 1200px;
-  width: 1200px;
   margin: 2rem auto 0 auto;
   box-sizing: border-box;
   padding: 2rem 0;
@@ -40,4 +41,14 @@
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .outerBox {
+    padding: 0 0.5rem;
+  }
+  .mainWrapper {
+    width: 100vw;
+    padding: 0;
+  }
 }

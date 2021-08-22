@@ -1,21 +1,47 @@
 .chartContainer {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  margin: 2rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 .chartTextWrapper {
-  width: 500px;
-  padding-top: 2rem;
+  width: 100%;
+  max-width: 50rem;
+  padding: 2rem;
 }
 .chartTextWrapper p {
   color: #6e6d7a;
 }
 .chartDataWrapper {
-  width: 600px;
+  width: 100%;
+  max-width: 60rem;
   display: flex;
   justify-content: center;
 }
 .donutWrapper {
-  width: 400px;
+  width: 100%;
+  max-width: 30rem;
+}
+
+@media (max-width: 1200px) {
+  .chartContainer {
+    flex-wrap: wrap;
+  }
+  .chartDataWrapper {
+    /* padding: 0 3rem; */
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .chartContainer {
+    margin: 0;
+  }
+  .chartTextWrapper,
+  .chartDataWrapper {
+    padding: 0;
+  }
 }

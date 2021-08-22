@@ -39,75 +39,6 @@ export default function Home({ storyblokData }) {
     }
   })
 
-  // const config = {
-  //   type: 'bar',
-  //   data: data,
-  //   options: {
-  //     indexAxis: 'y',
-  //     // Elements options apply to all of the options unless overridden in a dataset
-  //     // In this case, we are setting the border of each horizontal bar to be 2px wide
-  //     elements: {
-  //       bar: {
-  //         borderWidth: 2,
-  //       },
-  //     },
-  //     responsive: true,
-  //     plugins: {
-  //       legend: {
-  //         position: 'right',
-  //       },
-  //       title: {
-  //         display: true,
-  //         text: 'Chart.js Horizontal Bar Chart',
-  //       },
-  //     },
-  //   },
-  // }
-
-  const labels1 = [
-    '1-2 veces al año',
-    '3-6 veces al año',
-    'Más de 6 veces al año',
-  ]
-  const data1 = {
-    labels: labels1,
-    datasets: [
-      {
-        label: 'Porcentaje de encuestrados',
-        backgroundColor: '#095b90',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [35, 45, 20, 100],
-      },
-    ],
-  }
-
-  const options1 = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Frecuencia con la que los dueños de perros viajan con ellos en España según una encuesta publicada en julio de 2019',
-      },
-    },
-  }
-
-  const options2 = {
-    indexAxis: 'y',
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Frecuencia con la que los dueños de perros viajan con ellos en España según una encuesta publicada en julio de 2019',
-      },
-    },
-  }
-
   return (
     <div className={styles.container}>
       <Head>
@@ -128,6 +59,9 @@ export default function Home({ storyblokData }) {
               <SimpleContent blok={el} />
             </div>
           ))}
+        </div>
+        <div className={styles.chartHeader}>
+          <h2>Lo que dicen las encuestas</h2>
         </div>
         <div className={styles.chartWrapper}>
           {chartDisplayArray.map((el) => (

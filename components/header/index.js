@@ -42,7 +42,7 @@ const Header = () => {
           </ul>
           <ul className={styles.ulStyle}>
             <li className={styles.contactElement}>
-              <Link href='/iridium'>Contáctenos</Link>
+              <a href='/iridium'>Contáctenos</a>
             </li>
           </ul>
           {/* <Link href='/blog'>Contáctenos</Link> */}
@@ -51,7 +51,11 @@ const Header = () => {
           className={styles.menuButton}
           onClick={() => setMenuOpen(!isMenuOpen)}
         >
-          <i className='fa fa-bars'></i>
+          {!isMenuOpen ? (
+            <i className='fa fa-bars'></i>
+          ) : (
+            <i className='fa fa-close'></i>
+          )}
         </button>
       </div>
       <Modal
@@ -67,12 +71,12 @@ const Header = () => {
               <Link href='/article'>Blog</Link>
             </li>
             <li>
-              <Link href='/aboutme'>Sobre mi</Link>
+              <a href='/sobremi'>Sobre mi</a>
             </li>
           </ul>
         </div>
+        <div className={modalBackgroundStyles}></div>
       </Modal>
-      <div className={modalBackgroundStyles}></div>
     </header>
   )
 }
