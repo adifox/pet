@@ -42,7 +42,7 @@ const Header = () => {
           </ul>
           <ul className={styles.ulStyle}>
             <li className={styles.contactElement}>
-              <a href='/iridium'>Contáctenos</a>
+              <Link href='/'>Contáctenos</Link>
             </li>
           </ul>
           {/* <Link href='/blog'>Contáctenos</Link> */}
@@ -71,7 +71,7 @@ const Header = () => {
               <Link href='/article'>Blog</Link>
             </li>
             <li>
-              <a href='/sobremi'>Sobre mi</a>
+              <Link href='/sobremi'>Sobre mi</Link>
             </li>
           </ul>
         </div>
