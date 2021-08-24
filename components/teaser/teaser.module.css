@@ -26,23 +26,25 @@
   width: 100%;
   max-width: 40rem;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-right: 3rem;
 }
-.heroTitles h2 {
+/* .heroTitles h2 {
   font-weight: 400;
   letter-spacing: 0.1rem;
-}
-.title {
+} */
+.title,
+.headline2 {
   margin: 0;
   line-height: 48px;
   font-size: 38px;
   font-weight: 700;
 }
-.description {
-  line-height: 26px;
-  font-size: 16px;
+.subtitle {
+  line-height: 24px;
+  font-size: 24px;
   font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 
 .heroImageContainer {
@@ -104,10 +106,11 @@
   /* .heroTitles {
     padding-right: rem;
   } */
-  .heroTitles h1 {
+  .title,
+  .headline2 {
     font-size: 32px;
   }
-  .heroTitles h2 {
+  .subtitle {
     font-size: 18px;
   }
   .heroImageContainer {

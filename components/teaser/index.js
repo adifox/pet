@@ -5,7 +5,16 @@ import styles from './teaser.module.css'
 import ImageWrapper from '../ui-components/image-wrapper'
 
 const Hero = ({ blok }) => {
-  const { headline, subtitle, teaserImage, teaserSubImage } = blok
+  const {
+    headline,
+    headline2,
+    subtitle,
+    subtitle2,
+    subtitle3,
+    subtitle4,
+    teaserImage,
+    teaserSubImage,
+  } = blok
   console.log
   return (
     <div className={styles.heroWrapper}>
@@ -13,7 +22,11 @@ const Hero = ({ blok }) => {
         <div className={styles.heroContent}>
           <div className={styles.heroTitles}>
             <h1 className={styles.title}>{headline}</h1>
-            <h2>{subtitle}</h2>
+            <h2 className={styles.headline2}>{headline2}</h2>
+            <h2 className={styles.subtitle}>{subtitle}</h2>
+            <h2 className={styles.subtitle}>{subtitle2}</h2>
+            <h2 className={styles.subtitle}>{subtitle3}</h2>
+            <h2 className={styles.subtitle}>{subtitle4}</h2>
           </div>
           <div className={styles.heroImageContainer}>
             <ImageWrapper

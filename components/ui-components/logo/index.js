@@ -1,8 +1,15 @@
 // Components
 import ImageWrapper from '../image-wrapper'
 
-const Logo = ({ src, alt, width, height }) => {
-  return <ImageWrapper src={src} alt={alt} width={width} height={height} />
+const Logo = ({ width, height }) => {
+  return (
+    <ImageWrapper
+      src={'/images/pet-logo.png'}
+      alt={'petexcellenttreatment logo'}
+      width={width}
+      height={height}
+    />
+  )
 }
 
 export default Logo

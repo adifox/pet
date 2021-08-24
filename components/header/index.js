@@ -19,12 +19,7 @@ const Header = () => {
         <div className={styles.logoWrapper}>
           <Link href='/'>
             <a>
-              <Logo
-                src={'/images/pet-logo.png'}
-                alt='petexcellenttreatment logo'
-                width={205}
-                height={30}
-              />
+              <Logo width={205} height={30} />
             </a>
           </Link>
         </div>

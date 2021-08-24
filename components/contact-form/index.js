@@ -37,7 +37,7 @@ const ContactForm = () => {
           >
             {({ isSubmitting }) => (
               <Form>
-                <div className={styles.textFieldWrapper}>
+                <div className={styles.textFieldWrapper} id='contactForm'>
                   <label htmlFor='message'>Mensaje: </label>
                   <Field
                     name='message'

@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { getStoryblokData, getCacheVersion } from '../utils/storyblok'
 
@@ -71,6 +71,13 @@ export default function Home({ storyblokData }) {
           ))}
         </div>
         <ContactForm />
+        <div className={styles.contactFloater}>
+          <a href='#contactForm'>
+            <div className={styles.envelop}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </div>
+          </a>
+        </div>
       </main>
     </div>
   )

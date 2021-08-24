@@ -4,9 +4,14 @@ import styles from './footer.module.css'
 
 const Footer = () => {
   return (
-    <footer>
-      <div className={styles.outerBox}>
-        {/* <div className={styles.mainWrapper}>
+    <footer className={styles.footerMainWrapper}>
+      <div className={styles.containerBox}>
+        {/* <div className={styles.footerLogoWrapper}>
+          <div className={styles.logoWrapper}>
+            <Logo width={205} height={30} />
+          </div>
+        </div> */}
+        {/* <div className={styles.textWrapper}>
           <div>
             <h2>Contacto</h2>
             <ul>
@@ -35,7 +40,9 @@ const Footer = () => {
         </div> */}
       </div>
       <div className={styles.finalFooter}>
-        <p>&copy; Pet Excellent Treatment</p>
+        <p>
+          &copy; Pet Excellent Treatment 2021. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   )
