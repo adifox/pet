@@ -19,8 +19,8 @@ const Hero = ({ blok }) => {
             <ImageWrapper
               src={teaserImage.filename}
               alt='petexcellenttreatment'
-              height={300}
-              width={400}
+              height={350}
+              width={350}
               priority={true}
             />
             <div className={styles.blinkTeaserElement}>
