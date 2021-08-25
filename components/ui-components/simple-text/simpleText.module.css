@@ -1,0 +1,41 @@
+.background {
+  width: 100%;
+  background-color: aliceblue;
+  margin-top: 2rem;
+}
+.mainWrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.mainWrapper p {
+  color: #6e6d7a;
+}
+
+.textWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 50rem;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .textWrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .mainWrapper {
+    flex-wrap: wrap;
+  }
+  .textWrapper {
+    padding: 0;
+  }
+}

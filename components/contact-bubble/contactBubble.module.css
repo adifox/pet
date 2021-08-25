@@ -1,0 +1,22 @@
+.contactFloater {
+  z-index: 2147483000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #37b2a4;
+  transition: box-shadow 80ms ease-in-out 0s;
+  pointer-events: auto;
+  box-shadow: rgb(0 0 0 / 6%) 0px 1px 6px 0px, rgb(0 0 0 / 16%) 0px 2px 32px 0px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.envelop {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
