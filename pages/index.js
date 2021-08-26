@@ -33,7 +33,7 @@ export default function Home({ storyblokData }) {
           <DynamicComponent key={blok._uid} blok={blok} />
         ))}
         {isContactModalOpen && <ContactForm click={contactModalHandler} />}
-        <ContactBubble click={contactModalHandler} />
+        {!isContactModalOpen && <ContactBubble click={contactModalHandler} />}
       </main>
     </div>
   )
