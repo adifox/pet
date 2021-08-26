@@ -10,7 +10,7 @@ import DynamicComponent from '../components/dynamic-component'
 
 import styles from '../styles/Home.module.css'
 
-export default function Home({ storyblokData }) {
+export default function PetManager({ storyblokData }) {
   const [isContactModalOpen, setContectModal] = useState(false)
 
   const contactModalHandler = () => {
@@ -41,7 +41,7 @@ export default function Home({ storyblokData }) {
 
 export async function getServerSideProps(context) {
   const response = await getCacheVersion()
-  const storyblokData = await getStoryblokData('cdn/stories/home', {
+  const storyblokData = await getStoryblokData('cdn/stories/petmanager', {
     cv: response.data.space.version,
     version: 'published',
   })

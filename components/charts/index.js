@@ -67,19 +67,23 @@ const Charts = ({ blok }) => {
   const content = inView ? dataChart : null
 
   return !blok.donut ? (
-    <div ref={ref} className={styles.chartContainer}>
-      <div className={styles.chartTextWrapper}>
-        <h2>{blok.title}</h2>
-        <p>{blok.text}</p>
+    <div className={styles.outerWrapper}>
+      <div ref={ref} className={styles.chartContainer}>
+        <div className={styles.chartTextWrapper}>
+          <h2>{blok.title}</h2>
+          <p>{blok.text}</p>
+        </div>
+        <div className={styles.chartDataWrapper}>{content}</div>
       </div>
-      <div className={styles.chartDataWrapper}>{content}</div>
     </div>
   ) : (
-    <div ref={ref} className={styles.chartContainer}>
-      <div className={styles.chartDataWrapper}>{content}</div>
-      <div className={styles.chartTextWrapper}>
-        <h2>{blok.title}</h2>
-        <p>{blok.text}</p>
+    <div className={styles.outerWrapper}>
+      <div ref={ref} className={styles.chartContainer}>
+        <div className={styles.chartDataWrapper}>{content}</div>
+        <div className={styles.chartTextWrapper}>
+          <h2>{blok.title}</h2>
+          <p>{blok.text}</p>
+        </div>
       </div>
     </div>
   )

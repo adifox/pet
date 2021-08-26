@@ -6,10 +6,12 @@ const SimpleText = ({ blok }) => {
 
   return (
     <div className={styles.background}>
-      <div className={styles.mainWrapper}>
-        <div className={styles.textWrapper}>
-          <h2>{title}</h2>
-          <p>{text}</p>
+      <div className={styles.outerWrapper}>
+        <div className={styles.mainWrapper}>
+          <div className={styles.textWrapper}>
+            <h2>{title}</h2>
+            <p>{text}</p>
+          </div>
         </div>
       </div>
     </div>

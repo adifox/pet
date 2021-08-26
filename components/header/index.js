@@ -29,10 +29,10 @@ const Header = () => {
               <Link href='/'>Inicio</Link>
             </li>
             <li className={styles.navElements}>
-              <Link href='/blog'>Blog</Link>
+              <Link href='/petmanager'>PET Manager</Link>
             </li>
             <li className={styles.navElements}>
-              <Link href='/sobremi'>Sobre nosotros</Link>
+              <Link href='/sobrenosotros'>Sobre nosotros</Link>
             </li>
           </ul>
           <ul className={styles.ulStyle}>
@@ -40,7 +40,6 @@ const Header = () => {
               <Link href='/'>Contáctenos</Link>
             </li>
           </ul>
-          {/* <Link href='/blog'>Contáctenos</Link> */}
         </nav>
         <button
           className={styles.menuButton}
@@ -63,10 +62,10 @@ const Header = () => {
               <Link href='/'>Inicio</Link>
             </li>
             <li>
-              <Link href='/article'>Blog</Link>
+              <Link href='/petmanager'>PET Manager</Link>
             </li>
             <li>
-              <Link href='/sobremi'>Sobre mi</Link>
+              <Link href='/sobrenosotros'>Sobre nosotros</Link>
             </li>
           </ul>
         </div>

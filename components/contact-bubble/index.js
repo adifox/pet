@@ -3,13 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import styles from './contactBubble.module.css'
 
-const ContactBubble = () => (
-  <div className={styles.contactFloater}>
-    <a href='#contactForm'>
-      <div className={styles.envelop}>
-        <FontAwesomeIcon icon={faEnvelope} />
-      </div>
-    </a>
+const ContactBubble = ({ click }) => (
+  <div className={styles.contactFloater} onClick={() => click()}>
+    <div className={styles.envelop}>
+      <FontAwesomeIcon icon={faEnvelope} />
+    </div>
   </div>
 )
 

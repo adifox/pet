@@ -8,14 +8,16 @@ const FullImageBox = ({ blok }) => {
   const { image } = blok
 
   return (
-    <div className={styles.mainWrapper}>
-      <div key={image.id} className={styles.imageWrapper}>
-        <ImageWrapper
-          src={image.filename}
-          width={1200}
-          height={700}
-          alt={image.alt}
-        />
+    <div className={styles.outerWrapper}>
+      <div className={styles.mainWrapper}>
+        <div key={image.id} className={styles.imageWrapper}>
+          <ImageWrapper
+            src={image.filename}
+            width={1200}
+            height={700}
+            alt={image.alt}
+          />
+        </div>
       </div>
     </div>
   )

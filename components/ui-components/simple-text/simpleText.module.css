@@ -3,6 +3,10 @@
   background-color: aliceblue;
   margin-top: 2rem;
 }
+.outerWrapper {
+  width: 100%;
+  padding: 0 4rem;
+}
 .mainWrapper {
   display: flex;
   margin: 0 auto;
@@ -23,10 +27,14 @@
   text-align: center;
 }
 @media (max-width: 1024px) {
+  .outerWrapper {
+    padding: 0 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .textWrapper {
+  .textWrapper,
+  .outerWrapper {
     padding: 0 0.5rem;
   }
 }

@@ -1,3 +1,7 @@
+.outerWrapper {
+  width: 100%;
+  padding: 0 4rem;
+}
 .chartContainer {
   display: flex;
   justify-content: space-between;
@@ -28,12 +32,15 @@
   .chartContainer {
     flex-wrap: wrap;
   }
-  .chartDataWrapper {
-    /* padding: 0 3rem; */
+  .outerWrapper {
+    padding: 0 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
+  .outerWrapper {
+    padding: 0 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {

@@ -1,3 +1,7 @@
+.outerContainer {
+  width: 100%;
+  padding: 0 4rem;
+}
 .mainWrapper {
   display: flex;
   margin: 0 auto;
@@ -25,10 +29,14 @@
   padding: 2rem;
 }
 @media (max-width: 1024px) {
+  .outerContainer {
+    padding: 0 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .imageWrapper {
+  .imageWrapper,
+  .outerContainer {
     padding: 0.5rem;
   }
   .textWrapper {
