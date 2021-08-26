@@ -92,7 +92,9 @@
 @media (max-width: 580px) {
   .formContainer {
     max-width: 90vw;
-    margin: 2rem 0;
+    margin: 0.5rem 0;
+    padding: 0;
+    padding-bottom: 1rem;
   }
   .nameMailFields {
     flex-direction: column;
@@ -100,5 +102,15 @@
   .inputFieldWrapper {
     width: 100%;
     padding: 0 2rem;
+  }
+  .ctButtonWrapper {
+    justify-content: center;
+  }
+  .contactButton {
+    width: 100%;
+  }
+  .textField {
+    width: 100%;
+    height: 100px;
   }
 }
