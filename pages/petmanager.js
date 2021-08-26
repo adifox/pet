@@ -23,7 +23,7 @@ export default function PetManager({ storyblokData }) {
         <title>Petexcellenttreatment</title>
         <meta
           name='description'
-          content='Innovación del Corazón para tu hotel'
+          content='Sobre el PET Manager de Pet Excellent Treatment'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -39,7 +39,7 @@ export default function PetManager({ storyblokData }) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const response = await getCacheVersion()
   const storyblokData = await getStoryblokData('cdn/stories/petmanager', {
     cv: response.data.space.version,
