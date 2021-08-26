@@ -58,13 +58,13 @@ const Header = () => {
       >
         <div className={styles.mobileMenu}>
           <ul>
-            <li>
+            <li onClick={() => setMenuOpen(false)}>
               <Link href='/'>Inicio</Link>
             </li>
-            <li>
+            <li onClick={() => setMenuOpen(false)}>
               <Link href='/petmanager'>PET Manager</Link>
             </li>
-            <li>
+            <li onClick={() => setMenuOpen(false)}>
               <Link href='/sobrenosotros'>Sobre nosotros</Link>
             </li>
           </ul>
