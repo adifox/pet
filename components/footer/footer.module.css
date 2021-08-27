@@ -22,32 +22,51 @@
 }
 .textWrapper {
   display: flex;
-  flex-grow: 1;
-  /* border: 1px solid green; */
-  /* width: 100%;
-  max-width: 1200px; */
-  /* margin: 2rem auto 0 auto; */
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
   box-sizing: border-box;
-  /* padding: 2rem 0; */
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   color: #fff;
 }
 .textWrapper ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
 }
 .textWrapper h2 {
   text-decoration: underline;
+  background-color: #37b2a4;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
-/* .mainWrapper li {
-  color: #6e6d7a;
-} */
-/* .logoWrapper {
+.textWrapper a {
   display: flex;
-  height: 30px;
-  width: 205px;
-} */
-
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #37b2a4;
+}
+.faceIconWrapper {
+  width: 42px;
+  height: 42px;
+}
+.instaIconWrapper,
+.linkedIconWrapper {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+.instagramLink,
+.linkedinLink {
+  padding-bottom: 5px;
+}
 .textContent {
   display: flex;
 }

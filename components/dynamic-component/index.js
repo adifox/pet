@@ -16,10 +16,10 @@ const Components = {
   fullImageBox: FullImageBox,
 }
 
-const DynamicComponent = ({ blok }) => {
+const DynamicComponent = ({ blok, ...props }) => {
   if (typeof Components[blok.component] !== 'undefined') {
     const Component = Components[blok.component]
-    return <Component blok={blok} />
+    return <Component blok={blok} {...props} />
   }
   return null
 }

@@ -29,15 +29,12 @@ const Header = () => {
               <Link href='/'>Inicio</Link>
             </li>
             <li className={styles.navElements}>
-              <Link href='/petmanager'>PET Manager</Link>
-            </li>
-            <li className={styles.navElements}>
               <Link href='/sobrenosotros'>Sobre nosotros</Link>
             </li>
           </ul>
           <ul className={styles.ulStyle}>
             <li className={styles.contactElement}>
-              <Link href='/'>Contáctenos</Link>
+              <Link href='/petmanager'>PET Manager</Link>
             </li>
           </ul>
         </nav>
@@ -62,10 +59,10 @@ const Header = () => {
               <Link href='/'>Inicio</Link>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-              <Link href='/petmanager'>PET Manager</Link>
+              <Link href='/sobrenosotros'>Sobre nosotros</Link>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-              <Link href='/sobrenosotros'>Sobre nosotros</Link>
+              <Link href='/petmanager'>PET Manager</Link>
             </li>
           </ul>
         </div>

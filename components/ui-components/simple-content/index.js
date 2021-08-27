@@ -1,16 +1,20 @@
+import Link from 'next/link'
+
 // Styles
 import styles from './simpleContent.module.css'
 
 // Components
 import ImageWrapper from '../image-wrapper'
 
-const SimpleContent = ({ blok }) => {
-  const { image, mainText, title, leftPosition } = blok
+const SimpleContent = ({ blok, onClickHandler }) => {
+  const { image, mainText, title, leftPosition, ctaButton, ctaButtonText } =
+    blok
+  console.log('SIMPLE CONTENT:', blok)
 
   const content = leftPosition ? (
     <div className={styles.outerContainer}>
       <div className={styles.mainWrapper}>
-        <div className={styles.imageWrapper}>
+        <div className={styles.leftImageWrapper}>
           <ImageWrapper
             src={image.filename}
             width={600}
@@ -18,9 +22,14 @@ const SimpleContent = ({ blok }) => {
             alt={'an image'}
           />
         </div>
-        <div className={styles.textWrapper}>
+        <div className={styles.leftTextWrapper}>
           <h2>{title}</h2>
           <p>{mainText}</p>
+          {ctaButton && (
+            <Link href='/petmanager' passHref={true}>
+              <button className={styles.ctaLinkButton}>{ctaButtonText}</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -30,6 +39,14 @@ const SimpleContent = ({ blok }) => {
         <div className={styles.textWrapper}>
           <h2>{title}</h2>
           <p>{mainText}</p>
+          {ctaButton && (
+            <button
+              className={styles.ctaButton}
+              onClick={() => onClickHandler()}
+            >
+              {ctaButtonText}
+            </button>
+          )}
         </div>
         <div className={styles.imageWrapper}>
           <ImageWrapper

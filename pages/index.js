@@ -30,7 +30,11 @@ export default function Home({ storyblokData }) {
 
       <main className={styles.main}>
         {storyblokData.data.story.content.body.map((blok) => (
-          <DynamicComponent key={blok._uid} blok={blok} />
+          <DynamicComponent
+            key={blok._uid}
+            blok={blok}
+            onClickHandler={contactModalHandler}
+          />
         ))}
         {isContactModalOpen && <ContactForm click={contactModalHandler} />}
         {!isContactModalOpen && <ContactBubble click={contactModalHandler} />}
