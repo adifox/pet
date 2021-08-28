@@ -9,7 +9,6 @@ import ImageWrapper from '../image-wrapper'
 const SimpleContent = ({ blok, onClickHandler }) => {
   const { image, mainText, title, leftPosition, ctaButton, ctaButtonText } =
     blok
-  console.log('SIMPLE CONTENT:', blok)
 
   const content = leftPosition ? (
     <div className={styles.outerContainer}>

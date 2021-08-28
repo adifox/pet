@@ -79,8 +79,8 @@ const Charts = ({ blok }) => {
   ) : (
     <div className={styles.outerWrapper}>
       <div ref={ref} className={styles.chartContainer}>
-        <div className={styles.chartDataWrapper}>{content}</div>
-        <div className={styles.chartTextWrapper}>
+        <div className={styles.withDonutChartDataWrapper}>{content}</div>
+        <div className={styles.withDonutChartTextWrapper}>
           <h2>{blok.title}</h2>
           <p>{blok.text}</p>
         </div>

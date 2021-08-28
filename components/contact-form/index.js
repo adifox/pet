@@ -51,42 +51,44 @@ const ContactForm = ({ click }) => {
             >
               {({ isSubmitting }) => (
                 <Form>
-                  <div className={styles.textFieldWrapper} id='contactForm'>
-                    <label htmlFor='message'>Mensaje: </label>
-                    <Field
-                      name='message'
-                      component='textarea'
-                      className={styles.textField}
-                    />
-                  </div>
-                  <div className={styles.nameMailFields}>
-                    <div className={styles.inputFieldWrapper}>
-                      <label htmlFor='name'>Nombre: </label>
+                  <div className={styles.formWrapper}>
+                    <div className={styles.textFieldWrapper} id='contactForm'>
+                      <label htmlFor='message'>Mensaje: </label>
                       <Field
-                        type='text'
-                        name='name'
-                        className={styles.inputField}
+                        name='message'
+                        component='textarea'
+                        className={styles.textField}
                       />
-                      <ErrorMessage name='name' component='div' />
                     </div>
-                    <div className={styles.inputFieldWrapper}>
-                      <label htmlFor='email'>Email: </label>
-                      <Field
-                        type='email'
-                        name='email'
-                        className={styles.inputField}
-                      />
-                      <ErrorMessage name='email' component='div' />
+                    <div className={styles.nameMailFields}>
+                      <div className={styles.inputFieldWrapper}>
+                        <label htmlFor='name'>Nombre: </label>
+                        <Field
+                          type='text'
+                          name='name'
+                          className={styles.inputField}
+                        />
+                        <ErrorMessage name='name' component='div' />
+                      </div>
+                      <div className={styles.inputFieldWrapper}>
+                        <label htmlFor='email'>Email: </label>
+                        <Field
+                          type='email'
+                          name='email'
+                          className={styles.inputField}
+                        />
+                        <ErrorMessage name='email' component='div' />
+                      </div>
                     </div>
-                  </div>
-                  <div className={styles.ctButtonWrapper}>
-                    <button
-                      type='submit'
-                      disabled={isSubmitting}
-                      className={styles.contactButton}
-                    >
-                      Contáctenos
-                    </button>
+                    <div className={styles.ctButtonWrapper}>
+                      <button
+                        type='submit'
+                        disabled={isSubmitting}
+                        className={styles.contactButton}
+                      >
+                        Contáctenos
+                      </button>
+                    </div>
                   </div>
                 </Form>
               )}

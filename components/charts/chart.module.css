@@ -9,15 +9,23 @@
   max-width: 1200px;
   margin: 2rem auto;
 }
-.chartTextWrapper {
+.chartTextWrapper,
+.withDonutChartTextWrapper {
   width: 100%;
   max-width: 50rem;
   padding: 2rem;
 }
-.chartTextWrapper p {
+.chartTextWrapper p,
+.withDonutChartTextWrapper p {
   color: #6e6d7a;
 }
-.chartDataWrapper {
+/* .withDonutChartTextWrapper {
+    width: 100%;
+  max-width: 50rem;
+  padding: 2rem;
+} */
+.chartDataWrapper,
+.withDonutChartDataWrapper {
   width: 100%;
   max-width: 60rem;
   display: flex;
@@ -43,12 +51,20 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   .chartContainer {
     margin: 0;
   }
   .chartTextWrapper,
-  .chartDataWrapper {
-    padding: 0;
+  .chartDataWrapper,
+  .withDonutChartTextWrapper,
+  .withDonutChartDataWrapper {
+    padding: 0 0.5rem;
+  }
+  .withDonutChartTextWrapper {
+    order: 1;
+  }
+  .withDonutChartDataWrapper {
+    order: 2;
   }
 }
