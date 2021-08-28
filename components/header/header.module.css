@@ -112,10 +112,31 @@
 .mobileMenu ul {
   list-style: none;
   font-size: 20px;
+  width: 100%;
 }
 .mobileMenu li {
   margin-bottom: 2rem;
-  border-bottom: 1px solid #eaeaea;
+  /* border-bottom: 1px solid #eaeaea; */
+  margin-left: auto;
+}
+.mobileMenu {
+  display: flex;
+}
+.mobileContactElement {
+  /* display: flex; */
+  /* margin-left: auto; */
+}
+
+.mobileContactElement {
+  /* background-color: #fff; */
+  background-color: #37b2a4;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.08));
+  display: inline-block;
+  width: 100%;
+  /* margin-left: auto; */
 }
 .modalBackground {
   position: absolute;

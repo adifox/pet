@@ -5,6 +5,9 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 // Styles
 import styles from './contactForm.module.css'
 
+const CONTACT_US = 'Contáctenos'
+const SENDING = 'Enviando'
+
 const ContactForm = ({ click }) => {
   const [positiveResponse, setPositiveResponse] = useState(false)
   return (
@@ -14,9 +17,9 @@ const ContactForm = ({ click }) => {
         <div>
           {positiveResponse && (
             <div className={styles.thanksBox}>
-              <h2>
+              <h3>
                 Muchas gracias, en breve nos pondremos en contacto contigo.
-              </h2>
+              </h3>
               <button className={styles.thanksButton} onClick={() => click()}>
                 Genial
               </button>
@@ -84,9 +87,13 @@ const ContactForm = ({ click }) => {
                       <button
                         type='submit'
                         disabled={isSubmitting}
-                        className={styles.contactButton}
+                        className={
+                          !isSubmitting
+                            ? styles.contactButton
+                            : styles.contactButtonSending
+                        }
                       >
-                        Contáctenos
+                        {!isSubmitting ? CONTACT_US : SENDING}
                       </button>
                     </div>
                   </div>

@@ -56,13 +56,19 @@ const Header = () => {
         <div className={styles.mobileMenu}>
           <ul>
             <li onClick={() => setMenuOpen(false)}>
-              <Link href='/'>Inicio</Link>
+              <Link href='/'>
+                <a className={styles.mobileContactElement}>Inicio</a>
+              </Link>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-              <Link href='/sobrenosotros'>Sobre nosotros</Link>
+              <Link href='/sobrenosotros'>
+                <a className={styles.mobileContactElement}>Sobre nosotros</a>
+              </Link>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-              <Link href='/petmanager'>PET Manager</Link>
+              <Link href='/petmanager'>
+                <a className={styles.mobileContactElement}>PET Manager</a>
+              </Link>
             </li>
           </ul>
         </div>
