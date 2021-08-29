@@ -6,7 +6,7 @@
 }
 .formContainer {
   position: fixed;
-  z-index: 999999;
+  z-index: 11;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
