@@ -16,6 +16,7 @@ export default function Home({ storyblokData }) {
 
   const contactModalHandler = () => {
     setContectModal(!isContactModalOpen)
+    window.scrollTo(0, 60)
   }
 
   return (
