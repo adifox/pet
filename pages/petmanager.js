@@ -15,6 +15,7 @@ export default function PetManager({ storyblokData }) {
 
   const contactModalHandler = () => {
     setContectModal(!isContactModalOpen)
+    window.scrollTo(0, 0)
   }
 
   return (

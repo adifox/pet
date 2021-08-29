@@ -5,7 +5,6 @@ import { getStoryblokData, getCacheVersion } from '../utils/storyblok'
 
 // Components
 import ContactForm from '../components/contact-form'
-import AltForm from '../components/contact-form/alternative'
 import ContactBubble from '../components/contact-bubble'
 import DynamicComponent from '../components/dynamic-component'
 
@@ -38,7 +37,7 @@ export default function Home({ storyblokData }) {
             onClickHandler={contactModalHandler}
           />
         ))}
-        {isContactModalOpen && <AltForm click={contactModalHandler} />}
+        {isContactModalOpen && <ContactForm click={contactModalHandler} />}
         {!isContactModalOpen && <ContactBubble click={contactModalHandler} />}
       </main>
     </div>

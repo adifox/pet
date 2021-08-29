@@ -40,11 +40,9 @@ const ContactForm = ({ click }) => {
                 return errors
               }}
               onSubmit={(values, { setSubmitting, resetForm }) => {
-                console.log('VALUES:', values)
                 axios
                   .post('/api/mailer', values)
                   .then((response) => {
-                    console.log('RESPONSE:', response)
                     setSubmitting(false)
                     resetForm()
                     setPositiveResponse(true)

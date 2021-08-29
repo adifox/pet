@@ -15,7 +15,6 @@ const Hero = ({ blok }) => {
     teaserImage,
     teaserSubImage,
   } = blok
-  console.log
   return (
     <div className={styles.heroWrapper}>
       <div className={styles.heroContainer}>
@@ -46,8 +45,6 @@ const Hero = ({ blok }) => {
               />
             </div>
           </div>
-          {/* <div className={styles.heroImageContainer}>
-          </div> */}
         </div>
       </div>
       <svg
