@@ -26,7 +26,9 @@ const SimpleContent = ({ blok, onClickHandler }) => {
           <p>{mainText}</p>
           {ctaButton && (
             <Link href='/petmanager' passHref={true}>
-              <button className={styles.ctaLinkButton}>{ctaButtonText}</button>
+              <button className={styles.ctaLinkButton} aria-label='Petmanager'>
+                {ctaButtonText}
+              </button>
             </Link>
           )}
         </div>
@@ -41,6 +43,7 @@ const SimpleContent = ({ blok, onClickHandler }) => {
           {ctaButton && (
             <button
               className={styles.ctaButton}
+              aria-label='Contactanos'
               onClick={() => onClickHandler()}
             >
               {ctaButtonText}

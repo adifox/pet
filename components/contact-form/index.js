@@ -20,7 +20,11 @@ const ContactForm = ({ click }) => {
               <h3>
                 Muchas gracias, en breve nos pondremos en contacto contigo.
               </h3>
-              <button className={styles.thanksButton} onClick={() => click()}>
+              <button
+                aria-label='Cerrar'
+                className={styles.thanksButton}
+                onClick={() => click()}
+              >
                 Genial
               </button>
             </div>
@@ -84,6 +88,7 @@ const ContactForm = ({ click }) => {
                     <div className={styles.ctButtonWrapper}>
                       <button
                         type='submit'
+                        aria-label='Mandar Formulario'
                         disabled={isSubmitting}
                         className={
                           !isSubmitting

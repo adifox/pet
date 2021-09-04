@@ -17,6 +17,7 @@ const Footer = () => {
             <li>
               <a
                 href='https://www.facebook.com/PetExcellentTreatment'
+                aria-label='Pet Excellent Treatment enlace a Facebook'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -29,6 +30,7 @@ const Footer = () => {
               <a
                 href='https://www.instagram.com/pet_excellent_treatment'
                 className={styles.instagramLink}
+                aria-label='Pet Excellent Treatment enlace a Instagram'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -41,6 +43,7 @@ const Footer = () => {
               <a
                 href='https://www.linkedin.com/in/pet-excellent-treatment-60b83a21a/'
                 className={styles.linkedinLink}
+                aria-label='Pet Excellent Treatment enlace a LinkedIn'
                 target='_blank'
                 rel='noreferrer'
               >

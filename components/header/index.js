@@ -18,7 +18,7 @@ const Header = () => {
       <div className={styles.headerContainer}>
         <div className={styles.logoWrapper}>
           <Link href='/'>
-            <a>
+            <a aria-label='Enlace a la pagina de inicio'>
               <Logo width={205} height={30} />
             </a>
           </Link>
@@ -26,20 +26,31 @@ const Header = () => {
         <nav className={styles.navSection}>
           <ul className={styles.ulStyle}>
             <li className={styles.navElements}>
-              <Link href='/'>Inicio</Link>
+              <Link href='/'>
+                <a aria-label='Enlace a la pagina de inicio'>Inicio</a>
+              </Link>
             </li>
             <li className={styles.navElements}>
-              <Link href='/sobrenosotros'>Sobre nosotros</Link>
+              <Link href='/sobrenosotros'>
+                <a aria-label='Enlace a la pagina de sobre nosotros'>
+                  Sobre nosotros
+                </a>
+              </Link>
             </li>
           </ul>
           <ul className={styles.ulStyle}>
             <li className={styles.contactElement}>
-              <Link href='/petmanager'>PET Manager</Link>
+              <Link href='/petmanager'>
+                <a aria-label='Enlace a la pagina de PET Manager'>
+                  PET Manager
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>
         <button
           className={styles.menuButton}
+          aria-label='Abre Menu'
           onClick={() => setMenuOpen(!isMenuOpen)}
         >
           {!isMenuOpen ? (
@@ -57,17 +68,32 @@ const Header = () => {
           <ul>
             <li onClick={() => setMenuOpen(false)}>
               <Link href='/'>
-                <a className={styles.mobileContactElement}>Inicio</a>
+                <a
+                  className={styles.mobileContactElement}
+                  aria-label='Enlace a la pagina de inicio'
+                >
+                  Inicio
+                </a>
               </Link>
             </li>
             <li onClick={() => setMenuOpen(false)}>
               <Link href='/sobrenosotros'>
-                <a className={styles.mobileContactElement}>Sobre nosotros</a>
+                <a
+                  className={styles.mobileContactElement}
+                  aria-label='Enlace a la pagina de sobre nosotros'
+                >
+                  Sobre nosotros
+                </a>
               </Link>
             </li>
             <li onClick={() => setMenuOpen(false)}>
               <Link href='/petmanager'>
-                <a className={styles.mobileContactElement}>PET Manager</a>
+                <a
+                  className={styles.mobileContactElement}
+                  aria-label='Enlace a la pagina de PET Manager'
+                >
+                  PET Manager
+                </a>
               </Link>
             </li>
           </ul>
