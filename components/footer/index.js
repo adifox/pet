@@ -41,7 +41,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href='https://www.linkedin.com/in/pet-excellent-treatment-60b83a21a/'
+                href='https://www.linkedin.com/company/pet-excellent-treatment/'
                 className={styles.linkedinLink}
                 aria-label='Pet Excellent Treatment enlace a LinkedIn'
                 target='_blank'
