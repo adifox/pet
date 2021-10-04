@@ -40,7 +40,7 @@ export default function PetManager({ storyblokData }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const response = await getCacheVersion()
   const storyblokData = await getStoryblokData('cdn/stories/petmanager', {
     cv: response.data.space.version,

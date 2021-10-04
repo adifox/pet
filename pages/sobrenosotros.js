@@ -40,7 +40,7 @@ export default function SobreNosotros({ storyblokData }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const response = await getCacheVersion()
   const storyblokData = await getStoryblokData('cdn/stories/sobrenosotros', {
     cv: response.data.space.version,
